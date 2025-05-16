@@ -22,15 +22,15 @@ Run directly from the IDE.
 
 | Operation            | Time Complexity |
 |----------------------|-----------------|
-| Insert in MinHeap    | O(logn)         |
-| Extract Min          | O(logn)         |
-| Decrease Key         | O(logn)         |
-| Prim’s MST Overall   | O(n^2 logn)     |
+| Insert in MinHeap    | O(logv)         |
+| Extract Min          | O(logv)         |
+| Decrease Key         | O(logv)         |
+| Prim’s MST Overall   | O(v^2 logv)     |
 
-Insert inMin heap has O(logn) because in worst case the inserted node bubbles up the entire height of the heap which is logn for n vertices
-Extract Min has O(logn) because after removing the root, heapify may run from top to bottom
-Decrease Key has O(logn) because in worst case the key becomes the smallest and moves to the root
-Prim's MST overall is O(n^2 logn) because for each of n vertices they extract the min vertex which is O(n logn) then for each vertx scan all of n neighbors because of adjacency matrix which is O(n) and if the neighbor is in the heap and the edge is better call decrease key which is O(logn)
+Insert inMin heap has O(logv) because in worst case the inserted node bubbles up the entire height of the heap which is logv for v vertices
+Extract Min has O(logv) because after removing the root, heapify may run from top to bottom
+Decrease Key has O(logv) because in worst case the key becomes the smallest and moves to the root
+Prim's MST overall is O(v^2 logv) because for each of n vertices they extract the min vertex which is O(n logv) then for each vertx scan all of n neighbors because of adjacency matrix which is O(n) and if the neighbor is in the heap and the edge is better call decrease key which is O(logv)
 
 ## Test Case Description
 
